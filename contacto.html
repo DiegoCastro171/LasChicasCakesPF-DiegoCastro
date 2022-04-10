@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/estilos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <title>LasChicas/contacto</title>
+  </head>
+  <body class="container">
+    <header class="d-flex h-100 text-center text-black container-fluid">
+      <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+        <header class="mb-auto">
+          <div>
+            <nav class="navbar navbar-expand-lg navbar-light">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="#">LasChicasCakes</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link menunav colornav" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link menunav colornav" href="nosotras.html">Nosotras</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link menunav colornav" href="https://www.instagram.com/laschicascakes/?hl=es-la" target="_blank">Galeria</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link menunav colornav" href="productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link menunav colornav" href="contacto.html">Contacto</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+            </nav>
+          </div>
+        </header>
+        <main>
+          <div class="py-5 text-center">
+            <h2>¡CONTACTANOS!</h2>
+            <p class="lead">¡Dejanos tus datos y a la brevedad nos comunicaremos con vos, respondiendo cuanquier duda, presupuestos y envios!</p>
+          </div>
+      
+          <div class="row g-5">
+            <div class="col-md-5 col-lg-4 order-md-last">
+              <h4 class="d-flex justify-content-between align-items-center mb-3">
+                <span class="text-secondary">Carrito</span>
+                <span class="badge bg-secondary rounded-pill">3</span>
+              </h4>
+              <ul class="list-group mb-3">
+                <li class="list-group-item d-flex justify-content-between lh-sm">
+                  <div>
+                    <h6 class="my-0">Sand Torte</h6>
+                    <small class="text-muted">(torta de arena).</small>
+                  </div>
+                  <span class="text-muted">$1500</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between lh-sm">
+                  <div>
+                    <h6 class="my-0">Lemon Pie.</h6>
+                    <small class="text-muted">(tarta de limon).</small>
+                  </div>
+                  <span class="text-muted">$650</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between lh-sm">
+                  <div>
+                    <h6 class="my-0">Alfajores Marplatense.</h6>
+                    <small class="text-muted">(cubiertos con chocolate x12).</small>
+                  </div>
+                  <span class="text-muted">$450</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between bg-light">
+                  <div class="btn-flecha">
+                    <h6 class="my-0">PROMOWEB</h6>
+                    <small>LASCHICAS!</small>
+                  </div>
+                  <span class="btn-flecha">−$400</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between">
+                  <span>Total(ARS)</span>
+                  <strong>$2200</strong>
+                </li>
+              </ul>
+      
+              <form class="card p-2">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="CODIGO PROMOCIONAL">
+                  <button type="submit" class="btn btn-secondary">CARGAR</button>
+                </div>
+              </form>
+            </div>
+            <div class="col-md-7 col-lg-8">
+              <h4 class="mb-3">Dirección de Envio (SOLO CORDOBA-CAPITAL)</h4>
+              <form class="needs-validation" novalidate>
+                <div class="row g-3">
+                  <div class="col-sm-6">
+                    <label for="firstName" class="form-label">Nombre/s</label>
+                    <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                    <div class="invalid-feedback">
+                      Nombres validos.
+                    </div>
+                  </div>
+      
+                  <div class="col-sm-6">
+                    <label for="lastName" class="form-label" placeholder="miemail@.com">Apellido/s</label>
+                    <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                    <div class="invalid-feedback">
+                      Apellidos Validos.
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="miemail@.com">
+                    <div class="invalid-feedback">
+                      ingresa Dirección valida.
+                    </div>
+                  </div>
+                  
+                  <div class="col-md-5">
+                    <label for="country" class="form-label">Provincia</label>
+                    <select class="form-select" id="country" required>
+                      <option value="">Opciones</option>
+                      <option>Cordóba</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      Selecciona su ciudad por favor.
+                    </div>
+                  </div>
+      
+                  <div class="col-md-4">
+                    <label for="state" class="form-label">Ciudad</label>
+                    <select class="form-select" id="state" required>
+                      <option value="">Opciones</option>
+                      <option>Capital</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      Selecciona tu ciudad.
+                    </div>
+                  </div>
+
+                  <div class="col-12">
+                    <label for="address" class="form-label">Dirección</label>
+                    <input type="text" class="form-control" id="address" placeholder="Ramos Mejia 1234" required>
+                    <div class="invalid-feedback">
+                      Ingrese su Dirección.
+                    </div>
+                  </div>
+
+                <hr class="my-4">
+      
+                <button class="w-100 btn btn-lg btn-secondary" type="submit"><a href="https://api.whatsapp.com/send?phone=3513839198&text=%C2%A1Hola!%20%C2%A1quiero%20mas%20info%20sobre%20tus%20productos!%2" target="_blank" class="btn-secondary">Continuar con el Pedido</a></button>
+              </form>
+            </div>
+          </div>
+        </main>
+      
+        <br>
+      <hr class="featurette-divider">
+      <footer class="mt-auto text-dark-50 text-center">
+        <a href="https://m.facebook.com/laschicascakes/" target="_blank"><img src="./images/facebook.svg" alt="" class="btn-facebook rounded-circle" width="25px" height="25px"></a>
+        <a href="https://api.whatsapp.com/send?phone=3513839198&text=%C2%A1Hola!%20%C2%A1quiero%20mas%20info%20sobre%20tus%20productos!%20" target="_blank"><img src="./images/whatsapp.svg" alt="" class="btn-whatsapp rounded-circle" width="25px" height="25px"></a>
+        <a href="https://www.instagram.com/laschicascakes/?hl=es-la" target="_blank"><img src="./images/instagram.svg" alt="" class="btn-instagram rounded-circle" width="25px" height="25px"></a>
+        <p class="text-dark">© 2021 LasChicasCompany, Inc. All rights reserved.</p>
+      </footer>
+  </body>
+</html>
+      </div>
+    </div>
+  </nav>

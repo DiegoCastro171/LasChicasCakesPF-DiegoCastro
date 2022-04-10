@@ -1,0 +1,86 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+// Include any default variable overrides here (though functions won't be available)
+
+@import "../bootstrap/scss/bootstrap";
+
+$color: gray;
+
+@mixin color-titulos ($color){
+    color: $color;
+}
+
+body {
+    background-color: rgb(252, 229, 229);
+}
+
+header {
+    text-decoration: none;
+    align-self: center;
+    color: black;
+
+    h3 {
+        font-size: bold;
+        text-transform: uppercase;
+        text-decoration: underline;
+    }
+    .colornav {
+        color: gray;
+        border-radius: 5px;
+    }
+    .colornav:hover {
+        color: #c05252;
+        background-color: rgb(246, 185, 185);
+        text-decoration: underline;
+    }
+}
+
+main {
+    align-self: center;
+    h1 {
+        @include color-titulos(gray)
+    }
+    h2 {
+        @extend .h1;
+    }
+    p {
+        align-self: center;
+        color: black;
+    }
+    ul {
+        list-style: none;
+        li {
+            color: gray;
+        }
+        a {
+            color: gray;
+            border: 1px solid black;
+            border-radius: 2px;
+
+        }
+        a:hover {
+            color: rgb(3, 3, 3);
+        }
+    }
+}
+
+footer {
+    color: white;
+}
+
+$redes:(instagram:#f96e6e, facebook: #5fa0fb, whatsapp:#65f17c);
+@each $clave, $valor in $redes {
+    .btn-#{$clave} {
+        background-color: $valor;
+    }
+}
+
+$boton:(conocenos:#c05252, vermas:#028a56, flecha:#9a5f5f);
+@each $clave, $valor in $boton {
+    .btn-#{$clave} {
+        color: $valor;
+    }
+}
+
+
